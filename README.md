@@ -12,7 +12,7 @@ It uses some of the security recommendations that are not the default like
 It should also
 - lint source files with [ESLint](https://eslint.org/) (incl. [strict type checking](https://typescript-eslint.io/users/configs/#strict-type-checked))
 - [Stylelint](https://stylelint.io/) for CSS files
-- make sure that the renderer process is not polluted by Node.js types (and vice versa - the renderer processs has no DOM types)
+- make sure that the renderer process is not polluted by Node.js types (and vice versa - the main processs has no DOM types)
 - uses [process specific imports](https://www.electronjs.org/docs/latest/tutorial/process-model#process-specific-module-aliases-typescript) of the Electron package
 - not need other source file extensions other than `.ts` (e.g. `.mts` or `.cjs` and the transpiled `.js` files needed by electron)
 - support `type: "module"` in package.json
