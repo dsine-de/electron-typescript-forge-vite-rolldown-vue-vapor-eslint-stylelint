@@ -1,0 +1,21 @@
+{
+	"extends": [
+		"@tsconfig/node24/tsconfig.json",
+		"@tsconfig/node-ts/tsconfig.json"
+	],
+	"include": [
+		"*.ts",
+		"ts/node/**/*.ts"
+	],
+	"compilerOptions": {
+		"noEmit": true,
+		"module": "esnext",
+		"moduleResolution": "bundler",
+		"paths": {"electron/*": ["./node_modules/electron"]},
+		"types": [
+			"node",
+			"vite/client",
+			"@electron-forge/plugin-vite/forge-vite-env"
+		]
+	}
+}
