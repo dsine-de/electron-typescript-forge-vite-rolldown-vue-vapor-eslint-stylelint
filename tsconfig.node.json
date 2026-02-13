@@ -8,6 +8,7 @@
 		"ts/node/**/*.ts"
 	],
 	"compilerOptions": {
+		"composite": true,
 		"noEmit": true,
 		"module": "esnext",
 		"moduleResolution": "bundler",

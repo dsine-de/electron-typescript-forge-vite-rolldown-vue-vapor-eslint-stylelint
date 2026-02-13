@@ -5,6 +5,7 @@
 		"vue/**/*.vue"
 	],
 	"compilerOptions": {
+		"composite": true,
 		"lib": [
 			"ESNext",
 			"DOM",
